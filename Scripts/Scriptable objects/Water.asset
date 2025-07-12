@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb3ce7f361b0ca14cb4c8e997bf53d50, type: 3}
+  m_Name: Water
+  m_EditorClassIdentifier: 
+  orderId: 555
+  ingredients: 2c010000
+  arrow: {fileID: 1221327728649824417, guid: 8194c455cd0721a4fb387cd20c4773ef, type: 3}
+  price: 0.5
