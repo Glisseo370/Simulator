@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class StartNewDay : MonoBehaviour
 {
+
     private void Start()
     {
         gameObject.GetComponent<Button>().onClick.AddListener(() =>
