@@ -31,9 +31,7 @@ public class RotateArrow : MonoBehaviour
             testTween.Kill();
             float i = gameObject.transform.eulerAngles.z;
             y = (float)Math.Round(i);
-            Debug.Log(y);
             y = (float)Math.Round((y / 360) * 100);
-            Debug.Log(y);
 
             if (y <= greenUpBorder && y >= greenDownBorder)
             {
@@ -53,6 +51,7 @@ public class RotateArrow : MonoBehaviour
             EventBus.Instance.OnCostCalculation?.Invoke();
             NextOrder.Instance.NewOrder();
             Destroy(parentObject);
+            CurrentOrder.Instance.CleanCurrentOrder();
         }
 
     }

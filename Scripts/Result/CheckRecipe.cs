@@ -16,13 +16,20 @@ public class CheckRecipe : MonoBehaviour
 
     private void Check()
     {
-        if (CurrentIngridients.Instance.curIngridients.SetEquals(curOrder.orderRecipe.ingredients))
+        if (CurrentOrder.Instance.orderRecord != null)
         {
-            Instantiate(curOrder.orderRecipe.arrow, placeForCircle);
+            if (CurrentIngridients.Instance.curIngridients.SetEquals(curOrder.orderRecipe.ingredients))
+            {
+                Instantiate(curOrder.orderRecipe.arrow, placeForCircle);
+            }
+            else
+            {
+                Debug.Log("Нет");
+            }
         }
         else
         {
-            Debug.Log("Нет");
+            Debug.Log("Не выбран заказ");
         }
     }
 }
